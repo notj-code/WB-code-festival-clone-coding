@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .textcon {
+            color : white;
+            margin-top : 500px;
+            text-align : center;
+        }
+        body {
+            background : black;
+            height : 10000px;
+            font-family : 'nanumsquare';
+        }
+        .myVideo {
+            width : 70%;
+            margin: 0 auto;
+            display: block;
+        }
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+        div {
+            transition : all 0.5s; 
+        }
+        [data-scroll] {
+            opacity: 0;
+            will-change: transform, scale, opacity;
+            transform: translateY(6rem);
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+            }
+
+        [data-scroll='in'] {
+            opacity: 1;
+            transform: translateY(0);
+
+            }
+
+        [data-scroll='out'] {
+            opacity: 0;
+            }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    <section>
+        <div>
+            <img class="logo" src="source/Apple_logo_white.svg.png" style="display: block;width:2.5%;height:2.5%;margin-top:50px;">
+        </div>
+    </section>
+
+    <section data-scroll>
+        <div class="start">
+            <video class="myVideo" muted autoplay poster="source/스크린샷 2024-01-30 143445.png">
+                <source src="source/medium_2x.mp4" type="video/mp4">
+              </video>
+        </div>
+    </section>
+
+
+<section data-scroll>
+    <div>
+        <div class="textcon">
+            <h1>이것은</h1>
+        </div>
+        <div style="text-align:center;margin-top:30px">
+            <img style="width:50%;height:50%;margin-top:40px;" src="source/eye_tracking_on__ln11reqs6mi6_large.jpg">
+        </div>
+    </div>
+</section>
+<section data-scroll>
+    <div>
+        <div class="textcon">
+            <h1>애플의</h1>
+        </div>
+        <div style="text-align:center;margin-top:30px">
+            <img style="width:50%;height:50%;margin-top:40px;" src="source/6a04b428gy1g0zytrbs85g206105twf6.gif">
+        </div>            
+    </div>
+</section>
+<section data-scroll>
+    <div>
+        <div class="textcon">
+            <h1>미래</h1>
+        </div>
+        <div style="text-align:center;margin-top:30px">
+            <img style="width:50%;height:50%;margin-top:40px;" src="source/0a85b39e9db1c6b0273dbe66185dd656.jpg">
+        </div>            
+    </div>
+</section>
+
+<section data-scroll>
+    <div>
+        <div style="margin-top:700px;text-align: left; margin-left: 50px;" class="textcon">
+            <h1>가나다라바사?</h1>
+        </div>          
+    </div>
+</section>
+<section data-scroll>
+    <div>
+        <div style="margin-top:70px;text-align: left; margin-left: 50px;"  class="textcon">
+            <h1>아야어요?</h1>
+        </div>          
+    </div>
+</section>
+<section data-scroll>
+    <div>
+        <div style="margin-top:70px;text-align: left; margin-left: 50px;"  class="textcon">
+            <h1>할만하죠?</h1>
+        </div>          
+    </div>
+</section>
+
+
+    <script>
+        ScrollOut({
+        });
+    </script>
+</body>
+</html>
