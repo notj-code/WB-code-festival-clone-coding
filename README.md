@@ -1,7 +1,5 @@
 [# WEB dev
-Web site clone coding for WB Developer Conference
-
-Coding Festival: Clone Coding (Final)
+Web dev for WB Developer Conference
 
 1.0 WEB이란? HTTP, TCP통신
 	1.1 서버와 클라이언트: HTTP, TCP
